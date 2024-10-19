@@ -58,6 +58,8 @@ async function syncQuotes() {
     saveQuotes(); // Persist the updated quotes in localStorage
     populateCategories(); // Refresh categories if any new ones were added
     showRandomQuote(); // Optionally, display a new quote
+
+    notifyUser("Quotes synced with server!"); // Notify the user that quotes are synced
 }
 
 // Merge server quotes with local quotes, resolving conflicts (server data takes precedence)
